@@ -1,0 +1,57 @@
+print(" Disclaimer: This tool does not provide medical advice " 
+      "It is intended for informational purposes only." 
+      "It is not a substitute for professional medical advice, diagnosis or treatment." 
+      "Never ignore professional medical advice in seeking treatment because of something you have read on the internet")
+
+print("for the following questions please type yes as 'Y' and no as 'N' ")
+
+x=0
+p1=input(" Are you experiencing pain in certain parts of the body? ")
+if p1.upper()=="Y":
+    p11=input("Severe joint/bone/muscle pain ")
+    if p11.upper()=="Y":
+        x=x+0.91*0.6
+    p12=input("Headache ")
+    if p12.upper()=="Y":
+        x=x+0.80*0.63
+    p13=input("Eyepain ")
+    if p13.upper()=="Y":
+        x=x+0.53*0.69
+p2=input("do you feel nauseous ? ")
+if p2.upper()=="Y":
+    x=x+0.39*0.60
+p3=input("do you have any respiratory issues? ")
+if p3.upper()=="Y":
+    p31=input("do you have coughing? ")
+    if p31.upper=="Y":
+        x=x+0.15*0.64
+    p32=input("do you feel shortness of breath? ")
+    if p32.upper()=="Y":
+        x=x+0.29*0.90
+    p33=input("do you have a runny nose? ")
+    if p33.upper()=="Y":
+        x=x+0.12*0.52
+p4=input("do you have abdominal issues? ")
+if p4.upper()=="Y":
+    p41=input("do you have vomiting? ")
+    if p41.upper()=="Y":
+        x=x+0.22*0.67
+    p42=input("do you have Diarrhea? ")
+    if p42.upper()=="Y":
+        x=x+0.32*0.60
+    p43=input("do you have a loss of appetite? ")
+    if p43.upper()=="Y":
+        x=x+0.88*0.64
+p5=input("do you feel sensitive to light? ")
+if p5.upper()=="Y":
+    x=x+0.48*0.68
+p6=input("do you have a rash? ")
+if p6.upper=="Y":
+    x=x+0.55*0.78
+    
+if x<0.50:
+    print("you do not have Dengue")
+if x>0.50 and x<0.75:
+    print("you may not have dengue but it is advised to go for a checkup if symtoms persist")
+if x>0.75:
+    print("please consult with your doctor for treatment")
