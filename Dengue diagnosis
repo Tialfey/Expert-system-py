@@ -57,15 +57,11 @@ if p4.upper()=="Y":
 p5=input("do you feel sensitive to light? ")
 if p5.upper()=="Y":
     x=x+0.48*0.68
-    print(y)
     y=y+0.57*0.37
-    print(y)
 p6=input("do you have a rash? ")
 if p6.upper=="Y":
     x=x+0.55*0.78
-    print(y)
     y=y+0.71*0.46
-    print(y)
 if x-y<=0.20:
     print("you do not have Dengue, but it is adivised to consult with your doctor if symptoms persist")
 if x-y>0.20 and x-y<=0.45:
